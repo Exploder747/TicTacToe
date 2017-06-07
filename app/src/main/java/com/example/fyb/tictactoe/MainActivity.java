@@ -194,20 +194,23 @@ public class MainActivity extends AppCompatActivity {
             gameOver = true;
         } else {
             boolean empty = false;
-            for(i=1; i<=3; i++) {
-                for(j=1; j<=3; j++) {
-                    if(c[i][j]==2) {
+            for (i = 1; i <= 3; i++) {
+                for (j = 1; j <= 3; j++) {
+                    if (c[i][j] == 2) {
                         empty = true;
                         break;
                     }
                 }
             }
-            if(!empty) {
+            if (!empty) {
                 gameOver = true;
                 textView.setText("Game over. It's a draw!");
             }
         }
         return gameOver;
+
     }
 }
+
+
 
